@@ -16,7 +16,7 @@ pipeline {
             steps {
                 parallel (
                     "JS and CSS" : {
-						sh 'chown +x ./gradlew'
+						sh 'chmod +x ./gradlew'
 						sh 'ls -la ./'
                         sh './gradlew jshintjs jsdocjs csslint'
                     },
