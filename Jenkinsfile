@@ -27,7 +27,7 @@ pipeline {
                     },
                     "JS Unit Test" : {
 						sh 'whoami'
-						sh "echo 'jenkins' | sudo -S npm install -g npm@latest"
+						sh 'sudo npm install -g npm@latest'
                         sh 'npm install'
                         sh 'grunt'
                     }
