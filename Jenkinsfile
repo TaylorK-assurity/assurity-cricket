@@ -26,6 +26,7 @@ pipeline {
                         }
                     },
                     "JS Unit Test" : {
+						sh 'npm install -g npm@latest'
                         sh 'npm install'
                         sh 'grunt'
                     }
