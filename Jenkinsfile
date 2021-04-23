@@ -26,9 +26,6 @@ pipeline {
                         }
                     },
                     "JS Unit Test" : {
-						sh 'cat /etc/group'
-						sh 'whoami'
-						sh 'sudo npm install -g npm@latest'
                         sh 'npm install'
                         sh 'grunt'
                     }
